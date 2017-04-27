@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Campaign</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="callout">
+                <h3>login simulator</h3>
+                <form id="smart-form" action="/LOGIN_WEB/login.do" method="post">
+                    <div>
+                        <label for="name">User Name:</label>
+                        <input type="text" name="name" id="name" value="" tabindex="1" placeholder="UserName" required="required" />
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" value="" tabindex="2" placeholder="Password" required="required" />
+                    </div>
+                    <div class="hidden">
+                        <label for="operation">operation:</label>
+                        <input type="text" name="operation" id="operation" value="" tabindex="3" placeholder="operation" />
+                    </div>
+                    <div class="hidden">
+                        <label for="userType">userType:</label>
+                        <input type="text" name="userType" id="userType" value="" tabindex="4" placeholder="userType" />
+                    </div>
+                    <div class="hidden">
+                        <label for="promotionlogin">promotionlogin type:</label>
+                        <input type="text" name="promotionlogin" id="" value="" tabindex="5" placeholder="PA/PAPM" />
+                    </div>
+                    <div class="hidden">
+                        <input type="submit" value="login" />
+                    </div>
+                    <div class="callout">
+                        <a href="JavaScript:void(0)" onClick="hklogin();" class="small button" tabindex="6">login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
